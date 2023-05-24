@@ -81,15 +81,15 @@ To install the API_Attack_Mitigation library, you can use pip. Run the following
 
 Here, you can see how to use this library for API request attack mitigation on the server.
 
-1.Import the necessary module in your Python code:
+1. Import the necessary module in your Python code:
 ```sh
    from API_Attack_Mitigation_Package import API_Detector
 ```
-2.Create an instance of the API_Detector class:
+2. Create an instance of the API_Detector class:
 ```sh
    api_detector = API_Detector()
 ```
-3.Detect a potentially malicious request using the detect_malicious_request method:
+3. Detect a potentially malicious request using the detect_malicious_request method:
 ```sh
    result = await api_detector.detect_malicious_request(request, "fastapi")
 ```
