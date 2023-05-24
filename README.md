@@ -27,7 +27,7 @@ Here's why:
 * you want to protect your server
 * you want to protect the user and his information
 * you want to protect your company
-* it needs to easy-to-use and fixable.
+* easy-to-use and fixable.
 
 Our project focuses on creating a Python package for an API Attack Mitigation layer. This package enables developers to easily add a security layer to their API servers, effectively protecting them against malicious attacks. 
 
