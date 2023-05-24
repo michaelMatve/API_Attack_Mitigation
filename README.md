@@ -93,7 +93,7 @@ Here, you can see how to use this library for API request attack mitigation on t
 ```sh
    result = await api_detector.detect_malicious_request(request, "fastapi")
 ```
-The detect_malicious_request method takes two parameters: the request object representing the incoming API request and the framework name ("fastapi" in this example). The method returns True if the request is benign and False if it is identified as a potential malware or attack.
+The detect_malicious_request method takes two parameters: the request object representing the incoming API request and the framework name ("fastapi" in this example). The method returns False if the request is benign and True if it is identified as a potential malware or attack.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Server Code Example:
