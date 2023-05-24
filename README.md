@@ -16,52 +16,17 @@
 <br />
 <div align="center">
   <a href="https://github.com/michaelMatve/API_Attack_Mitigation">
-    <img src="images/api_logo_trans_back.png" alt="Logo" width="80" height="80">
+    <img src="images/api_logo_trans_back.png" alt="Logo" width="100" height="100">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">API_Attack_Mitigation</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    A python library that detect and block malicious API request.
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
-  </p>
+ </p>
 </div>
 
-
-
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
 
 
 
@@ -70,16 +35,20 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+With the increasing prevalence of API servers, the number of attacks targeting them has also grown. This highlights the necessity for an API Attack Mitigation system that safeguards both the server and its users. To address this need, we conducted thorough research and developed an easy-to-use protection system that offers effective defense.
 
 Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
+* you want to protect your server
+* you want to protect the user and his information
+* you want to protect your server
+* it needs to easy-to-use and fixable.
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
+Our project focuses on creating a Python package for an API Attack Mitigation layer. This package enables developers to easily add a security layer to their API servers, effectively protecting them against malicious attacks. 
 
-Use the `BLANK_README.md` to get started.
+
+We analyzed API attacks and existing solutions, finding that most focus on low-level detection like firewalls. While effective, these solutions are complex and inflexible. To address this, we developed a Python library leveraging ModSecurity's rules database. Our high-level approach offers greater flexibility and user-friendliness.
+Our Python library supports Flask and FastAPI servers and can be adapted for other API interfaces using the adapter design pattern. Leveraging an active ModSecurity rules database, our library stays up-to-date for effective request classification.
+With its capability to detect and block a wide range of API attacks such as SQL injection, RCE, directory traversal, XSS, and more, our library provides comprehensive protection. To offer users detailed diagnosis, we generate a log file that tracks every request.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -87,16 +56,13 @@ Use the `BLANK_README.md` to get started.
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+* [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org)
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+### Core Rule Set
+
+The Core Rule Set is a set of security rules designed to provide protection
+
+[![Core Rule Set](images/mod_logo.png | height=24)](https://coreruleset.org/installation/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
