@@ -87,7 +87,7 @@ Here, you can see how to use this library for API request attack mitigation on t
 ```
 2. Create an instance of the API_Detector class:
 ```sh
-   api_detector = API_Detector()
+   api_detector = API_Detector.API_Detector()
 ```
 3. Detect a potentially malicious request using the detect_malicious_request method:
 ```sh
