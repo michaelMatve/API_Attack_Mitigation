@@ -39,8 +39,10 @@ With its capability to detect and block a wide range of API attacks such as SQL 
 
 
 ###Log File Example:
+
+
   <a href="https://github.com/michaelMatve/API_Attack_Mitigation">
-    <img src="images/log_example.png" alt="log_code" width="400" height="600">
+    <img src="images/log_example.png" alt="log_code" width="600" height="400">
   </a>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -95,8 +97,10 @@ The detect_malicious_request method takes two parameters: the request object rep
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Server Code Example:
+
+
   <a href="https://github.com/michaelMatve/API_Attack_Mitigation">
-    <img src="images/code_example.png" alt="server_code" width="400" height="600">
+    <img src="images/code_example.png" alt="server_code" width="600" height="400">
   </a>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
