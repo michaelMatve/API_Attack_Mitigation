@@ -15,7 +15,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://github.com/michaelMatve/API_Attack_Mitigation">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
