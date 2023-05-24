@@ -26,7 +26,7 @@ With the increasing prevalence of API servers, the number of attacks targeting t
 Here's why:
 * you want to protect your server
 * you want to protect the user and his information
-* you want to protect your server
+* you want to protect your company
 * it needs to easy-to-use and fixable.
 
 Our project focuses on creating a Python package for an API Attack Mitigation layer. This package enables developers to easily add a security layer to their API servers, effectively protecting them against malicious attacks. 
@@ -42,7 +42,7 @@ With its capability to detect and block a wide range of API attacks such as SQL 
 
 
   <a href="https://github.com/michaelMatve/API_Attack_Mitigation">
-    <img src="images/log_example.png" alt="log_code" width="600" height="400">
+    <img src="images/log_example.png" alt="log_code" width="800" height="400">
   </a>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
