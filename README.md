@@ -35,7 +35,13 @@ Our project focuses on creating a Python package for an API Attack Mitigation la
 We analyzed API attacks and existing solutions, finding that most focus on low-level detection like firewalls. While effective, these solutions are complex and inflexible. To address this, we developed a Python library leveraging ModSecurity's rules database. Our high-level approach offers greater flexibility and user-friendliness.
 Our Python library supports Flask and FastAPI servers and can be adapted for other API interfaces using the adapter design pattern. Leveraging an active ModSecurity rules database, our library stays up-to-date for effective request classification.
 With its capability to detect and block a wide range of API attacks such as SQL injection, RCE, directory traversal, XSS, and more, our library provides comprehensive protection. To offer users detailed diagnosis, we generate a log file that tracks every request.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+
+###Log File Example:
+  <a href="https://github.com/michaelMatve/API_Attack_Mitigation">
+    <img src="images/log_example.png" alt="log_code" width="400" height="600">
+  </a>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -88,6 +94,11 @@ Here, you can see how to use this library for API request attack mitigation on t
 The detect_malicious_request method takes two parameters: the request object representing the incoming API request and the framework name ("fastapi" in this example). The method returns True if the request is benign and False if it is identified as a potential malware or attack.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+### Server Code Example:
+  <a href="https://github.com/michaelMatve/API_Attack_Mitigation">
+    <img src="images/code_example.png" alt="server_code" width="400" height="600">
+  </a>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
@@ -107,7 +118,7 @@ Michael Matveev - [@add_soon]() - michael.matve@gmail.com
 
 Eylon Naamat - [@add_soon]() - eylonnaamat@gmail.com
 
-Project Link: [https://github.com/michaelMatve/API_Attack_Mitigation](https://github.com/michaelMatve/API_Attack_Mitigatione)
+Project Link: [https://github.com/michaelMatve/API_Attack_Mitigation](https://github.com/michaelMatve/API_Attack_Mitigation)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -125,4 +136,5 @@ Project Link: [https://github.com/michaelMatve/API_Attack_Mitigation](https://gi
 * Prof. Amit Dvir
 * Dr. Ran Dubin
 * Mr. Udi Aharon
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
