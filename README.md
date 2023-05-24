@@ -38,7 +38,7 @@ With its capability to detect and block a wide range of API attacks such as SQL 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-###Log File Example:
+### Log File Example:
 
 
   <a href="https://github.com/michaelMatve/API_Attack_Mitigation">
