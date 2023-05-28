@@ -33,7 +33,7 @@ Our project focuses on creating a Python package for an API Attack Mitigation la
 
 
 We analyzed API attacks and existing solutions, finding that most focus on low-level detection like firewalls. While effective, these solutions are complex and inflexible. To address this, we developed a Python library leveraging ModSecurity's rules database. Our high-level approach offers greater flexibility and user-friendliness.
-Our Python library supports Flask and FastAPI servers and can be adapted for other API interfaces using the adapter design pattern. Leveraging an active ModSecurity rules database, our library stays up-to-date for effective request classification.
+Our Python library supports Flask and FastAPI servers and can be adapted for other API interfaces using the adapter design pattern. By capitalizing on the utilization of an actively maintained ModSecurity rules database as the primary defensive measure, complemented by an AI model serving as the secondary safeguard, our library consistently maintains its currency in order to achieve optimal effectiveness in accurately categorizing incoming requests, irrespective of whether they entail familiar or unfamiliar attack vectors.
 With its capability to detect and block a wide range of API attacks such as SQL injection, RCE, directory traversal, XSS, and more, our library provides comprehensive protection. To offer users detailed diagnosis, we generate a log file that tracks every request.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
