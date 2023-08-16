@@ -72,10 +72,15 @@ The Core Rule Set is a set of security rules designed to provide protection
 This section provides an example of how to install and utilize our library.
 
 ### Installation
-
-To install the API_Attack_Mitigation library, you can use pip. Run the following command:
+To install the API_Attack_Mitigation library:</br>
+first you need to install git-lfs. Run the following command:
    ```sh
-   pip install git+https://github.com/michaelMatve/API_Final_Project.git@v0.0.5
+   sudo apt-get install git-lfs
+   ```
+
+then you can use pip. Run the following command:
+   ```sh
+   pip install git+https://github.com/ArielCyber/API_SECURITY_LIBRARY.git@v0.0.6
    ```
 ## Usage
 
@@ -89,11 +94,30 @@ Here, you can see how to use this library for API request attack mitigation on t
 ```sh
    api_detector = API_Detector.API_Detector()
 ```
+Furthermore, the API_Detector.API_Detector() function accepts additional arguments that offer customization options:
+
+AI_flag: This argument determines whether the AI layer should be utilized or not. It accepts either False or True. By default, it is set to True.
+
+threshold: Specify the threshold value for the AI layer. The default value is 95.
+
+min_points: Set the minimum number of points required for training. When the default value is 16, it is advised to provide 16 or more points.
+
+number_of_compare_points: Indicate the number of comparison points utilized by the AI layer. The default value is 1000.
+
+save_every_K_point: Define the frequency at which the new model should be saved. The default is every 100 points.
+
+model_file_path: Provide the path to the AI layer model that has been constructed. The default path is "api_models/knn_model.bin".
+
+ids_file_path: Supply the path to the file containing the AI layer IDs that have been generated. The default path is "api_models/points_ids.json".
+
+ai_paranoia_level: Determine the paranoia level of the AI layer. It can be either 0 or 1. When set to 0, the AI layer doesn't inspect unknown header when the default is 0.
+
+rule_paranoia_level: Set the rule paranoia level, which can range from 0 to 4. The default value is 1.
 3. Detect a potentially malicious request using the detect_malicious_request method:
 ```sh
-   result = await api_detector.detect_malicious_request(request, "fastapi")
+   result = asyncio.run(api_detector.detect_malicious_request(request, "flask"))
 ```
-The detect_malicious_request method takes two parameters: the request object representing the incoming API request and the framework name ("fastapi" in this example). The method returns False if the request is benign and True if it is identified as a potential malware or attack.
+The detect_malicious_request method takes two parameters: the request object representing the incoming API request and the framework name ("flask" in this example). The method returns False if the request is benign and True if it is identified as a potential malware or attack.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Server Code Example:
