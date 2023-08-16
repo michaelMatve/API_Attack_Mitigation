@@ -125,7 +125,7 @@ The detect_malicious_request method takes two parameters: the request object rep
 
 
   <a href="https://github.com/michaelMatve/API_Attack_Mitigation">
-    <img src="images/code_example.png" alt="server_code" width="600" height="400">
+    <img src="images/code_example.png" alt="server_code" width="1000" height="400">
   </a>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
