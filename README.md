@@ -110,9 +110,10 @@ model_file_path: Provide the path to the AI layer model that has been constructe
 
 ids_file_path: Supply the path to the file containing the AI layer IDs that have been generated. The default path is "api_models/points_ids.json".
 
-ai_paranoia_level: Determine the paranoia level of the AI layer. It can be either 0 or 1. When set to 0, the AI layer doesn't inspect unknown header when the default is 0.
+ai_paranoia_level: Determine the paranoia level of the AI layer. It can be either 0 or 1. When set to 0, the AI layer doesn't inspect unknown header, the default is 0.
 
 rule_paranoia_level: Set the rule paranoia level, which can range from 0 to 4. The default value is 1.
+
 3. Detect a potentially malicious request using the detect_malicious_request method:
 ```sh
    result = asyncio.run(api_detector.detect_malicious_request(request, "flask"))
